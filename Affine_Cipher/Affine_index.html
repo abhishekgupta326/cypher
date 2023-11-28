@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Affine Cipher</title>
-  <link rel="stylesheet" type="text/css" href="Affine.css">
+  <link rel="stylesheet" type="text/css" href="../cypher_styles.css">
 </head>
 <body>
   <div class="container">
@@ -16,8 +16,10 @@
     <label for="b">Enter value for 'b':</label>
     <input type="number" id="b" min="0" max="25">
     <br>
-    <button onclick="encrypt()">Encrypt</button>
-    <button onclick="decrypt()">Decrypt</button>
+    <div class="button_container">
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+  </div>
     <div id="result"></div>
   </div>
   <script src="Affine_script.js"></script>

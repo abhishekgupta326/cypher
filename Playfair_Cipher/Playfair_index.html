@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playfair Cipher</title>
-    <link rel="stylesheet" type="text/css" href="Playfair.css">
+    <link rel="stylesheet" type="text/css" href="../cypher_styles.css">
+    
 </head>
 <body>
+    <div class ="container">
     <h2>Playfair Cipher</h2>
     <label for="inputText">Enter Text:</label>
     <textarea id="inputText" rows="4" cols="50"></textarea>
@@ -14,12 +16,14 @@
     <label for="key">Enter Key:</label>
     <input type="text" id="key" maxlength="25" placeholder="KEY">
     <br>
-    <button onclick="encrypt()">Encrypt</button>
-    <button onclick="decrypt()">Decrypt</button>
+    <div class = "button-centre">
+        <button onclick="encrypt()">Encrypt</button>
+        <button onclick="decrypt()">Decrypt</button>
+    </div>
     <br>
     <label for="outputText">Result:</label>
     <textarea id="outputText" rows="4" cols="50" readonly></textarea>
-
+</div>
     <script src="Playfair_script.js"></script>
 </body>
 </html>
