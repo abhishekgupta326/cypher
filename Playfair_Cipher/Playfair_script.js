@@ -79,6 +79,8 @@ function decrypt() {
   const inputText = document.getElementById('inputText').value.toUpperCase().replace(/J/g, 'I');
   const key = document.getElementById('key').value.toUpperCase();
   let matrix = createMatrix(key);
+  console.log(key);
+  console.log(inputText);
   let result = '';
 
   for (let i = 0; i < inputText.length; i += 2) {

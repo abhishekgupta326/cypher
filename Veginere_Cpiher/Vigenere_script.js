@@ -1,13 +1,13 @@
 function encrypt() {
-    const message = document.getElementById("message").value;
-    const key = document.getElementById("key").value;
+    const message = document.getElementById("message").value.toUpperCase();
+    const key = document.getElementById("key").value.toUpperCase();
     const encryptedMessage = vigenereEncrypt(message, key);
     document.getElementById("result").textContent = `Encrypted Message: ${encryptedMessage}`;
   }
   
   function decrypt() {
     const message = document.getElementById("message").value;
-    const key = document.getElementById("key").value;
+    const key = document.getElementById("key").value.toUpperCase();
     const decryptedMessage = vigenereDecrypt(message, key);
     document.getElementById("result").textContent = `Decrypted Message: ${decryptedMessage}`;
   }
